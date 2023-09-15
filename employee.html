@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="vichu.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Function to generate a random color in hexadecimal format
+        function getRandomColor() {
+          const letters = '0123456789ABCDEF';
+          let color = '#';
+          for (let i = 0; i < 6; i++) {
+            color += letters[Math.floor(Math.random() * 16)];
+          }
+          return color;
+        }
+      
+        // Function to change the background color
+        function changeBackgroundColor() {
+          document.body.style.backgroundColor = getRandomColor();
+        }
+      
+        // Set an interval to change the background color every 3 seconds (3000 milliseconds)
+        setInterval(changeBackgroundColor, 3000);
+      </script>
+    <center><h1>Employee Form</h1><br><br>
+<form>
+    <div class="end">
+    <lable style="color:violet(137,137,241)">Enter Your Name:</lable>
+    <input type="text" id="name"><br><br><br>
+    <lable  style="color:violet(137,137,241)">Enter Your Department:</lable>
+    <input type="text" id="dept"><br><br><br>
+    <lable style="color:violet(137,137,241)">Tell us a little about your self:</lable>
+    <textarea></textarea><br><br>
+    <lable style="color:violet(137,137,241)">Do you exercise at home?</lable>
+    <input type="radio" value="yes">
+    <lable style="color:violet(137,137,241)">yes</lable>
+    <input type="radio" value="No">
+    <lable style="color:violet(137,137,241)">No</lable><br><br>
+    <lable style="color:violet(137,137,241)">how do you like to read about favorite topics?</lable><br><br>
+    <input type="checkbox" value="Books">
+    <lable style="color:violet(137,137,241)">Books</lable>
+    <input type="checkbox" value="online reasource">
+    <lable style="color:violet(137,137,241)">online resource</lable>
+    <input type="checkbox" value="phone apps">
+    <lable style="color:violet(137,137,241)">phone apps</lable>
+    <input type="checkbox" value="Magazines">
+    <label style="color:violet(137,137,241)">Magazines</label><br><br>
+    <lable style="color:violet(137,137,241)">what genre of movies do you like?</lable>
+    <select>
+        <option>comedy</option>
+        <option>adventures</option>
+        <option>action</option>
+        <option>horror</option>
+        <option>fantacy</option>
+        <option>science fiction</option>
+    </select><br><br>
+    <input type="submit" value="submit form"> 
+
+</div>
+</form>
+</center>
+
+</body>
+</html>
